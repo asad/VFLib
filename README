@@ -1,4 +1,3 @@
-
 VFLib code can be used to find/perform substructure.
 
 The algorithm is described in 
@@ -10,7 +9,7 @@ Volume 26, Issue 10, Oct. 2004 Page(s):1367 - 1372
 The orignal code was taken from http://metamolecular.com/mx and modifed by 
 Syed Asad Rahman (asad@ebi.ac.uk)
 
-This code require Chemistry Development Kit (CDK) 
+This code require Chemistry Development Kit (CDK http://cdk.git.sourceforge.net)
 
 Wish you a happy coding!
 
