@@ -1,4 +1,4 @@
-VFLib code can be used to find/perform substructure.
+VFLib code can be used to find/perform MCS/substructure searches (Graph (Sub)-Isomorphism).
 
 The algorithm is described in 
 Cordella, L.P.; Foggia, P.; Sansone, C.; Vento, M. 
