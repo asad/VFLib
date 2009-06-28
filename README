@@ -1,4 +1,7 @@
-VFLib code can be used to find/perform MCS/substructure searches (Graph (Sub)-Isomorphism).
+****************************************************************
+VFLib code can be used to find/perform MCS/substructure searches
+(Graph (Sub)-Isomorphism).
+****************************************************************
 
 The algorithm is described in 
 Cordella, L.P.; Foggia, P.; Sansone, C.; Vento, M. 
@@ -11,7 +14,15 @@ Syed Asad Rahman (asad@ebi.ac.uk)
 
 This code requires the Chemistry Development Kit (CDK http://cdk.git.sourceforge.net)
 
+The present code is part of the Small Molecule Subgraph Detector 
+(SMSD http://www.ebi.ac.uk/thornton-srv/software/SMSD/) library.
+
+If you use this software please cite the paper and the URL (SMSD)
+
+Syed Asad Rahman, Matthew Bashton, Gemma L. Holliday, Rainer Schrader and Janet M. Thornton: Small Molecule Subgraph Detector (SMSD) Toolkit (under review)
+
 Wish you a happy coding!
 
 Name: Syed Asad Rahman
 Contact: asad@ebi.ac.uk
+
