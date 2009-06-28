@@ -116,9 +116,9 @@ public class VFlib {
         c3.setID("3");
         IAtom c4 = DefaultChemObjectBuilder.getInstance().newAtom("C");
         c4.setID("4");
-        IAtom c5 = DefaultChemObjectBuilder.getInstance().newAtom("N");
+        IAtom c5 = DefaultChemObjectBuilder.getInstance().newAtom("C");
         c5.setID("5");
-        IAtom c6 = DefaultChemObjectBuilder.getInstance().newAtom("N");
+        IAtom c6 = DefaultChemObjectBuilder.getInstance().newAtom("C");
         c6.setID("6");
 
         result.addAtom(c1);
@@ -157,7 +157,7 @@ public class VFlib {
         c3.setID("3");
         IAtom c4 = DefaultChemObjectBuilder.getInstance().newAtom("C");
         c4.setID("4");
-        IAtom c5 = DefaultChemObjectBuilder.getInstance().newAtom("N");
+        IAtom c5 = DefaultChemObjectBuilder.getInstance().newAtom("C");
         c5.setID("5");
         IAtom c6 = DefaultChemObjectBuilder.getInstance().newAtom("C");
         c6.setID("6");
