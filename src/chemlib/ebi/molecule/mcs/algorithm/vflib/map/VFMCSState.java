@@ -173,6 +173,11 @@ public class VFMCSState implements IState {
         if (queryPath.isEmpty()) {
             return true;
         }
+
+        if (!matchBondsToHead(match)) {
+            return false;
+        }
+
         for (int i = 0; i < queryPath.size() - 1; i++) {
             IEdge queryBond = query.getEdge(queryPath.get(i), match.getQueryNode());
             IBond targetBond = target.getBond(targetPath.get(i), match.getTargetAtom());
@@ -212,5 +217,27 @@ public class VFMCSState implements IState {
         }
 
         return true;
+    }
+
+    private boolean matchBondsToHead(VFMatch match) {
+        INode queryHead = getQueryPathHead();
+        IAtom targetHead = getTargetPathHead();
+
+        IEdge queryBond = query.getEdge(queryHead, match.getQueryNode());
+        IBond targetBond = target.getBond(targetHead, match.getTargetAtom());
+
+        if (queryBond == null || targetBond == null) {
+            return false;
+        }
+
+        return matchBond(queryBond, targetBond);
+    }
+
+    private INode getQueryPathHead() {
+        return queryPath.get(queryPath.size() - 1);
+    }
+
+    private IAtom getTargetPathHead() {
+        return targetPath.get(targetPath.size() - 1);
     }
 }

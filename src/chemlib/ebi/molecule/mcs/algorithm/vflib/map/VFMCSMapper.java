@@ -108,7 +108,6 @@ public class VFMCSMapper implements IMapper {
 
             Map<INode, IAtom> map = state.getMap();
             if (isMCS(map) && !hasMap(map)) {
-
                 maps.add(state.getMap());
             }
             return;
@@ -125,7 +124,7 @@ public class VFMCSMapper implements IMapper {
                 Map<INode, IAtom> map = state.getMap();
 //                Added to Store MCS Solutions
 
-                if (!map.isEmpty() && isMCS(map) && !hasSubGraph(map)) {
+                if (!map.isEmpty() && isMCS(map) && !hasMap(map)) {//!hasSubGraph(map)) {
                     maps.add(state.getMap());
                 }
 
@@ -168,20 +167,19 @@ public class VFMCSMapper implements IMapper {
     private boolean hasSubGraph(Map<INode, IAtom> map) {
 
         for (Map<INode, IAtom> storedMappings : maps) {
-            boolean isFlag = true;
+            boolean MatchFlag = true;
             for (Map.Entry<INode, IAtom> mapping : storedMappings.entrySet()) {
-
-
                 if (!map.containsKey(mapping.getKey()) && !map.containsValue(mapping.getValue())) {
-                    isFlag = false;
+                    MatchFlag = false;
                     break;
                 }
             }
 
-            if (isFlag) {
+            if (MatchFlag) {
 
                 return true;
             }
+
         }
 
         return false;

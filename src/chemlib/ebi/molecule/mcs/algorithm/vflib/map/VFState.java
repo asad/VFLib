@@ -83,6 +83,7 @@ public class VFState implements IState {
         loadCandidates(match);
     }
 
+    @Override
     public void backTrack() {
         if (queryPath.isEmpty() || isGoal()) {
             map.clear();

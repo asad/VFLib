@@ -127,16 +127,11 @@ public class VFMapper implements IMapper {
     }
 
     private void mapAll(IState state) {
-
-//        System.out.println("In Map All");
-
         if (state.isDead()) {
-//            System.out.println("is Dead");
             return;
         }
 
         if (state.isGoal()) {
-//            System.out.println("is Goal");
             Map<INode, IAtom> map = state.getMap();
 
             if (!hasMap(map)) {
@@ -147,12 +142,7 @@ public class VFMapper implements IMapper {
 
 
         while (state.hasNextCandidate()) {
-
-
             VFMatch candidate = state.nextCandidate();
-
-//            System.out.println("state.isMatchFeasible(candidate): " + state.isMatchFeasible(candidate));
-
             if (state.isMatchFeasible(candidate)) {
                 IState nextState = state.nextState(candidate);
 
