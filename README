@@ -13,10 +13,10 @@ The original code was taken from http://metamolecular.com/mx and modified by
 Syed Asad Rahman (asad@ebi.ac.uk)
 
 This code requires the Chemistry Development Kit 
-(CDK http://cdk.git.sourceforge.net) .
+(CDK http://cdk.git.sourceforge.net ) .
 
 The present code is part of the Small Molecule Subgraph Detector 
-(SMSD http://www.ebi.ac.uk/thornton-srv/software/SMSD/) library.
+(SMSD http://www.ebi.ac.uk/thornton-srv/software/SMSD ) library.
 
 If you use this software please cite the paper and the URL (SMSD)
 
