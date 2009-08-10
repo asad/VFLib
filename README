@@ -18,7 +18,7 @@ This code requires the Chemistry Development Kit
 The present code is part of the Small Molecule Subgraph Detector 
 (SMSD http://www.ebi.ac.uk/thornton-srv/software/SMSD ) library.
 
-If you use this software please cite the paper and the URL (SMSD)
+If you use this software please <b>cite the paper and the (SMSD) URL</b> 
 
 S. A. Rahman, M. Bashton, G. L. Holliday, R. Schrader and J. M. Thornton, Small Molecule Subgraph Detector (SMSD) toolkit, Journal of Cheminformatics 2009, 1:12. DOI:10.1186/1758-2946-1-12
 
