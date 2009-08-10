@@ -25,4 +25,7 @@
 
 /**
  * @author Syed Asad Rahman <asad @ ebi.ac.uk>
+ * @citation S. A. Rahman, M. Bashton, G. L. Holliday, R. Schrader and J. M. Thornton, 
+ * Small Molecule Subgraph Detector (SMSD) toolkit, Journal of Cheminformatics 2009, 1:12. 
+ * DOI:10.1186/1758-2946-1-12
  */
