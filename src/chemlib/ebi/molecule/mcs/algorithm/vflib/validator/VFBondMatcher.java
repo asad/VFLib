@@ -75,11 +75,10 @@ public class VFBondMatcher implements IBondMatcher {
             return true;
 
         }
-//
-        /*TO DO Asad enable this when CDK chemistry improves*/
-//        if (this.unsaturation == getUnsaturation(targetBond)) {
-//            return true;
-//        }
+
+       if (this.unsaturation == getUnsaturation(targetBond)) {
+            return true;
+        }
 
         return false;
     }
